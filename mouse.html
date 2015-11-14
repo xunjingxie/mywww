@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+	<body>
+		<p onmouseup="mouseup()" onmousedown="mousedown()">this is p</p>	
+	</body>
+</html>
+<script>
+	function mousedown(){
+		var e = window.event;
+		var obj = e.srcElement;
+		obj.style.color='red';
+	}	
+	function mouseup(){
+		var e = window.event;
+		var obj = e.srcElement;
+		obj.style.color='blue';
+	}	
+</script>

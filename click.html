@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+	<body>
+		<button onclick='changeColor()'>changeColor</button>		
+	</body>
+</html>
+<script>
+	var color = new Array('red','yellow','green');
+	var n = 0;
+	function changeColor(){
+		if(n>color.length-1)n=0;
+		document.bgColor = color[n];
+		n++;
+	}
+</script>
